@@ -1,13 +1,15 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom';
-import NavTabs from './components/NavTabs';
+import Nav from './components/Nav';
+import './App.css';
 
 function App() {
   return (
+    <div className="app-background">
     <>
-    <NavTabs />
+    <Nav />
     <Outlet />
   </>
+  </div>
 );
 }
 
