@@ -12,9 +12,8 @@ export default function Portfolio() {
                     <div className="card text card-margin">
                         <Image src={weatherImage} alt="man holding weather icons" />
                         <div className="card-img overlay">
-                            <h5 className="card-title">Project 1</h5>
+                            <h5 className="card-title">Project</h5>
                             <p className="card-text">blah blah blah</p>
-                            {/* add image here */}
                         </div>
                     </div>
                 </div>
@@ -22,9 +21,8 @@ export default function Portfolio() {
                     <div className="card text card-margin">
                         <Image src={weatherImage} alt="man holding weather icons" />
                         <div className="card-img overlay">
-                            <h5 className="card-title">Project 1</h5>
+                            <h5 className="card-title">Project</h5>
                             <p className="card-text">blah blah blah</p>
-                            {/* add image here */}
                         </div>
                     </div>
                 </div>
@@ -32,9 +30,8 @@ export default function Portfolio() {
                     <div className="card text card-margin">
                         <Image src={weatherImage} alt="man holding weather icons" />
                         <div className="card-img overlay">
-                            <h5 className="card-title">Project 1</h5>
+                            <h5 className="card-title">Project</h5>
                             <p className="card-text">blah blah blah</p>
-                            {/* add image here */}
                         </div>
                     </div>
                 </div>
@@ -42,9 +39,26 @@ export default function Portfolio() {
                     <div className="card text card-margin">
                         <Image src={weatherImage} alt="man holding weather icons" />
                         <div className="card-img overlay">
-                            <h5 className="card-title">Project 1</h5>
+                            <h5 className="card-title">Project</h5>
                             <p className="card-text">blah blah blah</p>
-                            {/* add image here */}
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div className="card text card-margin">
+                        <Image src={weatherImage} alt="man holding weather icons" />
+                        <div className="card-img overlay">
+                            <h5 className="card-title">Project</h5>
+                            <p className="card-text">blah blah blah</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div className="card text card-margin">
+                        <Image src={weatherImage} alt="man holding weather icons" />
+                        <div className="card-img overlay">
+                            <h5 className="card-title">Project</h5>
+                            <p className="card-text">blah blah blah</p>
                         </div>
                     </div>
                 </div>

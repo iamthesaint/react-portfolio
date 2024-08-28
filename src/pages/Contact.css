@@ -1,0 +1,14 @@
+.form-font-size {
+    font-size: 15px !important;
+}
+
+.btn-primary {
+   background-color: #ff00ab;
+    border-color: #000000;
+}
+
+.btn-primary:hover {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ff00ab;
+}
