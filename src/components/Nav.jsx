@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import { NavItem } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
-import Image from "react-bootstrap/Image";
 import deer from "../assets/deer.svg";
 import { motion } from "framer-motion";
 
 function Nav() {
   // State to manage the navbar-brand text
-  const [brandText, setBrandText] = useState("steph");
+  const [brandText, setBrandText] = useState("About Me");
 
   // Event handlers for mouse hover
   const handleMouseEnter = (e) => {
@@ -17,7 +16,7 @@ function Nav() {
   };
 
   const handleMouseLeave = (e) => {
-    setBrandText("steph");
+    setBrandText("About Me");
     e.target.style.color = "#000";
   };
 
@@ -46,11 +45,6 @@ function Nav() {
         </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <NavItem>
-            <NavLink to="/About" className="nav-link">
-              About
-            </NavLink>
-          </NavItem>
           <NavItem>
             <NavLink to="/Portfolio" className="nav-link">
               Portfolio
