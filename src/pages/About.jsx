@@ -1,9 +1,11 @@
+import './About.css';
+
 
 export default function About() {
   return (
     <section className="container">
       <h1>About Me</h1>
-        <p>
+        <p className="about centered-text">
             blah blah blah
         </p>
     </section>

@@ -1,3 +1,4 @@
+import './Error.css'
 
 export default function ErrorPage() {
     return (

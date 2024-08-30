@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import "./Nav.css";
 import Image from "react-bootstrap/Image";
 import deer from "../assets/deer.svg";
+import { motion } from "framer-motion";
 
 function Nav() {
   // State to manage the navbar-brand text
@@ -11,7 +12,7 @@ function Nav() {
 
   // Event handlers for mouse hover
   const handleMouseEnter = (e) => {
-    setBrandText("home");
+    setBrandText("Home");
     e.target.style.color = "#ff00ab";
   };
 
@@ -23,7 +24,7 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-light">
       <div className="container-fluid">
-        <Image src={deer} alt="deer" className="deer" />
+        <motion.img src={deer} alt="deer silhouette" className="deer"/>
         <a
           className="navbar-brand"
           href="/"
@@ -47,22 +48,22 @@ function Nav() {
         <ul className="navbar-nav">
           <NavItem>
             <NavLink to="/About" className="nav-link">
-              about
+              About
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink to="/Portfolio" className="nav-link">
-              portfolio
+              Portfolio
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink to="/Contact" className="nav-link">
-              contact
+              Contact
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink to="/Resume" className="nav-link">
-              résumé
+              Résumé
             </NavLink>
           </NavItem>
         </ul>
