@@ -2,36 +2,30 @@ import React, { useState } from "react";
 import { NavItem } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
-import deer from "../assets/deer.svg";
+import gazelle from "../assets/gazelle3.svg";
 import { motion } from "framer-motion";
 
 function Nav() {
-  // State to manage the navbar-brand text
-  const [brandText, setBrandText] = useState("About Me");
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
-  // Event handlers for mouse hover
-  const handleMouseEnter = (e) => {
-    setBrandText("Home");
-    e.target.style.color = "#ff00ab";
-  };
-
-  const handleMouseLeave = (e) => {
-    setBrandText("About Me");
-    e.target.style.color = "#000";
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    collapsed: { opacity: 0, x: "100%" },
   };
 
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-light">
       <div className="container-fluid">
-        <motion.img src={deer} alt="deer silhouette" className="deer"/>
-        <a
-          className="navbar-brand"
-          href="/"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          {brandText}
-        </a>
+        <motion.img
+          src={gazelle}
+          alt="Gazelle Logo"
+          className="gazelle"
+          whileHover={{ x: [0, -5, 5, -5, 5, 0], y: [0, -5, 5, -5, 5, 0] }}
+          transition={{ duration: "1", ease: "easeInOut" }}
+        />
+
+        <h1 className="navbar-brand">Steph St.Hilaire</h1>
         <button
           className="navbar-toggler"
           type="button"
@@ -40,28 +34,45 @@ function Nav() {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={handleNavCollapse}
         >
+          <motion.div
+            initial={false}
+            animate={isNavCollapsed ? "collapsed" : "open"}
+            variants={variants}
+          ></motion.div>
+
           <span className="navbar-toggler-icon"></span>
         </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
-          <NavItem>
-            <NavLink to="/Portfolio" className="nav-link">
-              Portfolio
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/Contact" className="nav-link">
-              Contact
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/Resume" className="nav-link">
-              Résumé
-            </NavLink>
-          </NavItem>
-        </ul>
-      </div>
+        <div
+          className={`collapse navbar-collapse ${
+            isNavCollapsed ? "collapse" : "show"
+          }`}
+          id="navbarNav"
+        >
+          <ul className="navbar-nav ml-auto">
+            <NavItem>
+              <NavLink to="/" className="nav-link">
+                About Me
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/Portfolio" className="nav-link">
+                Portfolio
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/Contact" className="nav-link">
+                Contact
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/Resume" className="nav-link">
+                Résumé
+              </NavLink>
+            </NavItem>
+          </ul>
+        </div>
       </div>
     </nav>
   );

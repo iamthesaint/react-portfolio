@@ -1,6 +1,7 @@
 .app-background {
-  background-color: #fff7f0; /* Replace with your desired color */
-  min-height: 100vh; /* Ensure the background covers the full viewport */
+  background-color: #fff7f0;
+  min-height: 100vh;
+  margin-bottom: 400px;
 }
 
 .card {

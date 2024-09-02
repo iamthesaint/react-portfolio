@@ -2,16 +2,19 @@
     background-color: #fff7f0 !important;
 }
 
-/* deer image css */
-.deer {
-    width: 100px;
-    height: 100px;
+.gazelle {
+    width: 127px;
+    height: 150px;
+    margin: 40px;
+    background-color: transparent;
+}
+
+
+.navbar-nav {
+    margin-top: 32px;
 }
 
 .navbar-brand {
-    padding-left: 20px;
-    margin-right: 30px;
+    margin-left: 100px;
 }
-
-
 

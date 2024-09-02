@@ -2,19 +2,30 @@
 
 .card-margin {
     margin-bottom: 50px;
-    border: 1px solid #000000; 
+    border: 1px solid #000
 }
 
 .card-text {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     font-style: italic;
-    font-family:'Times New Roman', Times, serif;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .card-title {
     font-size: 50px;
     text-align: center;
+    letter-spacing: 0.3px;
+    margin: 9px;
+}
+
+.card-subtitle {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
 }
 
 .card-container {
@@ -25,25 +36,47 @@
 
 .card {
     display: flex;
-    opacity: 50%;
+    opacity: 70%;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1 1 auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+}
+
+
+.card:nth-child(2),
+.card:nth-child(3),
+.card:nth-child(4),
+.card:nth-child(5) {
+    height: 300px; /* Set the same height for the middle 4 cards */
 }
 
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    /* add transparency to hover */
     opacity: 100%;
     }
 
 .card img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .card .card-img {
     flex-grow: 1;
+}
+
+.github-link img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.github-link img:hover {
+    transform: scale(1.2);
+}
+
+.card:first-child {
+    margin-top: 50px;
+
 }
