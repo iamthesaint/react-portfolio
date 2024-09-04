@@ -1,5 +1,7 @@
 import "./Home.css";
-import self from "../assets/IMG_9998.JPG";
+import Image from "react-bootstrap/Image";
+import self from "../assets/self.png";
+
 
 export default function Home() {
   return (
