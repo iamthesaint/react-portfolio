@@ -23,14 +23,11 @@ export default function Portfolio() {
         <div className="col-md-9">
           <div className="card text card-margin">
             <div className="card-images">
-              <Image
-                src={path}
-                style={{ height: "700px", width: "100%" }}
-                alt="a scenic mountaintop walking path with ocean views"
+              <Image src={path} style={{ height: "700px", width: "100%" }} alt="a scenic mountaintop walking path with ocean views"
               />
               <Image src={weatherexss} alt="a weather expedition screenshot" />
             </div>
-            <div className="card-img overlay">
+\            <div className="card-img overlay">
               <h5 className="card-title">Weather Expedition</h5>
               <h6 className="card-subtitle">OpenAI</h6>
               <p className="card-text">

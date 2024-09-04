@@ -1,5 +1,6 @@
 import "../components/Footer.css";
 import React from "react";
+import Image from "react-bootstrap/Image";
 import instagram from "../assets/Instagram_Glyph_Black.png";
 import linkedin from "../assets/LI-In-Bug.png";
 import github from "../assets/github-mark.png";
