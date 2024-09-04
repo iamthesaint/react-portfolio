@@ -1,14 +1,10 @@
-*  {
-    background-color: #fff7f0;
-    font-family: "Six Caps", sans-serif;
-    font-size: 57px;
-    font-weight: 400;
+* {
+  background-color: #fff7f0;
+  font-family: "Six Caps", sans-serif;
+  font-size: 57px;
+  font-weight: 400;
 }
 
 section.container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
-
-
-
-  

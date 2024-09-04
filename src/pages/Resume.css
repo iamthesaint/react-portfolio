@@ -1,18 +1,18 @@
 .card-title {
-    font-size: 60px;
-    margin: 40px;
+  font-size: 60px;
+  margin: 40px;
 }
 
 .icon {
-    padding: 20px;
+  padding: 20px;
 }
 
 .res {
-    font-size: 25px;
-    font-style: italic;
-    color: #ff00ab;
-    font-family: 'Times New Roman', Times, serif;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  color: #ff00ab;
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
 }

@@ -1,31 +1,29 @@
 .form-font-size {
-    font-size: 15px !important;
+  font-size: 15px !important;
 }
 
 .btn-primary.btn-sm {
-    background-color: #ff00ab;
-    border-color: #000000;
-    border-radius: 5px;
+  background-color: #ff00ab;
+  border-color: #000000;
+  border-radius: 5px;
 }
 
 .btn-primary:hover {
-    background-color: #000000;
-    border-color: #000000;
-
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .form-label {
-    margin-bottom: 19px;
+  margin-bottom: 19px;
 }
 
 .form-control:focus {
-    border-color: #ff00ab;
-    box-shadow: 0 0 0 0.2rem rgba(255, 0, 171, 0.25);
-    
+  border-color: #ff00ab;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 171, 0.25);
 }
 
 .error-message {
-    color: red;
-    font-size: 50px;
-    background-color: transparent; 
+  color: red;
+  font-size: 50px;
+  background-color: transparent;
 }

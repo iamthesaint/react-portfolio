@@ -22,7 +22,10 @@ function Nav() {
           alt="Gazelle Logo"
           className="gazelle"
           // on hover shake animation
-          whileHover={{ scale: 1, rotate: [0, -10, 10, -10, 10, -10, 10, -10, 0] }}
+          whileHover={{
+            scale: 1,
+            rotate: [0, -10, 10, -10, 10, -10, 10, -10, 0],
+          }}
           transition={{ duration: "1.5", ease: "easeInOut" }}
         />
 

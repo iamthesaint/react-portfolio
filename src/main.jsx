@@ -1,48 +1,46 @@
-import ReactDOM from 'react-dom'
-import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import App from './App';
-import Home from './pages/Home';
-import Error from './pages/Error';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import Resume from './pages/Resume';
+import App from "./App";
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     errorElement: <Error />,
     children: [
       {
         index: true,
-        element: <Home />
+        element: <Home />,
       },
       {
-        path: '/Portfolio',
-        element: <Portfolio />
+        path: "/Portfolio",
+        element: <Portfolio />,
       },
       {
-        path: '/Contact',
-        element: <Contact />
+        path: "/Contact",
+        element: <Contact />,
       },
       {
-        path: '/Resume',
-        element: <Resume />
+        path: "/Resume",
+        element: <Resume />,
       },
       {
-        path: '/Error',
-        element: <Error />
-      }
-    ]
-  }
+        path: "/Error",
+        element: <Error />,
+      },
+    ],
+  },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );
-
-

@@ -1,18 +1,17 @@
 .bg-light {
-    background-color: #fff7f0 !important;
+  background-color: #fff7f0 !important;
 }
 
 .gazelle {
-    width: 127px;
-    height: 150px;
-    background-color: transparent;
+  width: 127px;
+  height: 150px;
+  background-color: transparent;
 }
 
 .navbar-nav {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 .navbar-brand {
-    margin-left: 40px;
+  margin-left: 40px;
 }
-

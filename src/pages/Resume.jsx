@@ -21,7 +21,9 @@ export default function Resume() {
             </div>
           </div>
         </div>
-        <a className="res" href="src/assets/stephenie-st-hilaire-resume.pdf">download my resume</a>
+        <a className="res" href="src/assets/stephenie-st-hilaire-resume.pdf">
+          download my resume
+        </a>
       </div>
     </section>
   );
