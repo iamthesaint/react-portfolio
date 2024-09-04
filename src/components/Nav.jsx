@@ -21,8 +21,9 @@ function Nav() {
           src={gazelle}
           alt="Gazelle Logo"
           className="gazelle"
-          whileHover={{ x: [0, -5, 5, -5, 5, 0], y: [0, -5, 5, -5, 5, 0] }}
-          transition={{ duration: "1", ease: "easeInOut" }}
+          // on hover shake animation
+          whileHover={{ scale: 1, rotate: [0, -10, 10, -10, 10, -10, 10, -10, 0] }}
+          transition={{ duration: "1.5", ease: "easeInOut" }}
         />
 
         <h1 className="navbar-brand">Steph St.Hilaire</h1>

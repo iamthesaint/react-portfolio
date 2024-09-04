@@ -4,10 +4,15 @@ import './Home.css';
 export default function Home() {
   return (
     <section className="container">
-      <h1>About Me</h1>
-        <p className="about centered-text">
-        My decision to pursue web development stems from an innate passion for creativity and problem-solving. As someone who loves turning ideas into tangible results, I find it to be the perfect combination of logic and artistry. I'm consistently driven to learn by my incurable curiosity about the world. The opportunity to craft digital experiences that impact people's lives drew me in, and I'm excited to build a career in this dynamic field where my thirst for knowledge is satisfied.
+      <div className="container col-md-12">
+      <h1>Hi, I'm Steph</h1>
+        <p className="about left-text">
+        My decision to pursue web development stems from a natural passion for creativity and problem-solving. I love bringing ideas to life, finding that perfect blend of logic and artistry. My insatiable curiosity is always pushing me to learn more, and I am contsantly seeking new challenges to expand my skillset. The opportunity to craft digital experiences that impact people's lives excites me, and I'm eager to continue growing as a developer.
         </p>
+      </div>
+      <div className="container col-md-6">
+    <img src='src/assets/IMG_9998.JPG' alt='photo of steph st.hilaire' className='self-img' />
+    </div>
     </section>
     );
 }

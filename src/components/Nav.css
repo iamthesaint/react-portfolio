@@ -5,16 +5,14 @@
 .gazelle {
     width: 127px;
     height: 150px;
-    margin: 40px;
     background-color: transparent;
 }
-
 
 .navbar-nav {
     margin-top: 32px;
 }
 
 .navbar-brand {
-    margin-left: 100px;
+    margin-left: 40px;
 }
 

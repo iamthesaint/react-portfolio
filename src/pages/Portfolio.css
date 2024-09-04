@@ -43,7 +43,6 @@
     margin: 20px;
 }
 
-
 .card:nth-child(2),
 .card:nth-child(3),
 .card:nth-child(4),
@@ -55,7 +54,7 @@
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     opacity: 100%;
-    }
+}
 
 .card img {
     max-width: 100%;
