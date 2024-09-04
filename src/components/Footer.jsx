@@ -1,28 +1,31 @@
 import "../components/Footer.css";
 import React from "react";
+import instagram from "../assets/Instagram_Glyph_Black.png";
+import linkedin from "../assets/LI-In-Bug.png";
+import github from "../assets/github-mark.png";
 
 export default function Footer() {
   return (
     <footer className="container-footer">
       <p>
         <a href="https://github.com/iamthesaint">
-          <img
+          <Image
             className="footer-logo"
-            src="src/assets/github-mark.png"
+            src={github}
             alt="github logo"
           />
         </a>
         <a href="https://www.instagram.com/iamthesaint/">
-          <img
+          <Image
             className="footer-logo"
-            src="src/assets/Instagram_Glyph_Black.png"
+            src={instagram}
             alt="instagram logo"
           />
         </a>
         <a href="https://www.linkedin.com/in/stephenie-st-hilaire">
-          <img
+          <Image
             className="footer-logo"
-            src="src/assets/LI-In-Bug.png"
+            src={linkedin}
             alt="linkedin logo"
           />
         </a>

@@ -1,4 +1,5 @@
 import "./Home.css";
+import self from "../assets/IMG_9998.JPG";
 
 export default function Home() {
   return (
@@ -16,8 +17,8 @@ export default function Home() {
         </p>
       </div>
       <div className="container col-md-6">
-        <img
-          src="src/assets/IMG_9998.JPG"
+        <Image
+          src={self}
           alt="photo of steph st.hilaire"
           className="self-img"
         />
