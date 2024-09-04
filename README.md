@@ -4,6 +4,8 @@
 ## Description
 My personal portfolio to showcase my projects and development experience/education.
 
+Created with React.
+
 Deployed with Netlify: 
 [Take a look!](https://stepheniesthilaire.netlify.app)
 
