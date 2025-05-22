@@ -2,7 +2,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
-My personal portfolio to showcase my projects and development experience/education.
+My personal portfolio created during a react course to showcase my projects and development experience/education. *No longer used as my portfolio*
 
 Created with React.
 
