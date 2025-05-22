@@ -6,9 +6,6 @@ My personal portfolio to showcase my projects and development experience/educati
 
 Created with React.
 
-Deployed with Netlify: 
-[Take a look!](https://stepheniesthilaire.netlify.app)
-
 ## License
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
